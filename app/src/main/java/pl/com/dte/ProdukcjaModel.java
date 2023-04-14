@@ -38,8 +38,9 @@ public class ProdukcjaModel
             @Override
             public void onResponse(Call<List<PRODUKCJA>> call, Response<List<PRODUKCJA>> response)
             {
-                //Przekaż do presentera listę danych z bazy
-                eventBus.post(response.body());
+                //Przekaż do presentera listę danych z bazy (jeśli są jakeiś wyniki)
+                if(response.body() != null)
+                    eventBus.post(response.body());
             }
 
             @Override
