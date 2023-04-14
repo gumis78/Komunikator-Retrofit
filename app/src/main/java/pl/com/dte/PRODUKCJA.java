@@ -1,4 +1,4 @@
-package com.example.retrofit;
+package pl.com.dte;
 
 import com.google.gson.annotations.SerializedName;
 

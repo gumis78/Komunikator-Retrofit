@@ -1,4 +1,4 @@
-package com.example.retrofit;
+package pl.com.dte;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest
     {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.retrofit", appContext.getPackageName());
+        assertEquals("com.com.retrofit", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.example.retrofit;
+package pl.com.dte;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.content.res.AppCompatResources;

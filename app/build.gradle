@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.retrofit'
+    namespace 'pl.com.dte'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.retrofit"
+        applicationId "pl.com.dte"
         minSdk 24
         targetSdk 33
         versionCode 1

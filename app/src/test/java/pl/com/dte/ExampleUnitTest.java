@@ -1,4 +1,4 @@
-package com.example.retrofit;
+package pl.com.dte;
 
 import org.junit.Test;
 

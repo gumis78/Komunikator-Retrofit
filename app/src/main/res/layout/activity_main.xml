@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:keepScreenOn="true"
-    tools:context=".MainActivity">
+    tools:context="pl.com.dte.MainActivity">
 
     <LinearLayout
         android:id="@+id/main_kontener"

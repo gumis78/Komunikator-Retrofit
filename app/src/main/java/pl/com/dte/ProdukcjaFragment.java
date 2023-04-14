@@ -1,4 +1,4 @@
-package com.example.retrofit;
+package pl.com.dte;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -13,6 +13,8 @@ import androidx.appcompat.content.res.AppCompatResources;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import pl.com.dte.R;
 
 import java.util.List;
 

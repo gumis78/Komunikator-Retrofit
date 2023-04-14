@@ -1,4 +1,4 @@
-package com.example.retrofit;
+package pl.com.dte;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
