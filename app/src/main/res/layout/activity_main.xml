@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_kontener"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+
+        <Button
+            android:id="@+id/btn_produkcja"
+            android:text="@string/b1"
+            style="@style/main_buttons"/>
+
+        <Button
+            android:id="@+id/btn_potrzeby"
+            android:text="@string/b2"
+            style="@style/main_buttons"/>
+
+        <Button
+            android:id="@+id/btn_zamowienia"
+            android:text="@string/b3"
+            style="@style/main_buttons"/>
+
+        <Button
+            android:id="@+id/btn_reklamacje"
+            android:text="@string/b4"
+            style="@style/main_buttons"/>
+
+        <Button
+            android:id="@+id/btn_projekty"
+            android:text="@string/b5"
+            style="@style/main_buttons"/>
+
+        <Button
+            android:id="@+id/btn_pomysly"
+            android:text="@string/b6"
+            style="@style/main_buttons"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/kontener"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
