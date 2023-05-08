@@ -2,6 +2,7 @@ package pl.com.dte;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.content.res.AppCompatResources;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import android.annotation.SuppressLint;
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                showFragmentPRODUKCJA();
+                showFragment(new ProdukcjaFragment());
                 setBtnBackground(bProdukcja);
             }
         });
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                showFragment(new PotrzebyFragment());
                 setBtnBackground(bPotrzeby);
             }
         });
@@ -55,6 +57,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                showFragment(new ZamowieniaFragment());
                 setBtnBackground(bZamowienia);
             }
         });
@@ -66,6 +69,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                showFragment(new ReklamacjeFragment());
                 setBtnBackground(bReklamacje);
             }
         });
@@ -77,6 +81,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                showFragment(new ProjektyFragment());
                 setBtnBackground(bProjekty);
             }
         });
@@ -88,6 +93,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                showFragment(new PomyslyFragment());
                 setBtnBackground(bPomysly);
             }
         });
@@ -96,12 +102,13 @@ public class MainActivity extends AppCompatActivity
         bProdukcja.performClick();
     }
 
-    //Fragment z danymi PRODUKCJA
-    private void showFragmentPRODUKCJA()
+    //Funkcja wyświetla fragment w kontenerze
+    private void showFragment(Fragment fragment)
     {
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.kontener, new ProdukcjaFragment(),"VisibleFragment").commit();
+        fragmentManager.beginTransaction().replace(R.id.kontener, fragment,"VisibleFragment").commit();
     }
+
 
     //Funkcja do ustawiania koloru przycisku
     private void setBtnBackground(Button button)

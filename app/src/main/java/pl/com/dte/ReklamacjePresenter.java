@@ -6,20 +6,21 @@ import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.List;
 
-public class ProdukcjaPresenter
+public class ReklamacjePresenter
 {
-    private Contract.ProdukcjaFragment view;
-    private ProdukcjaModel model;
+    private Contract.ReklamacjeFragment view;
+    private ReklamacjeModel model;
+
     private EventBus eventBus;
 
-    public ProdukcjaPresenter(Contract.ProdukcjaFragment view)
+    public ReklamacjePresenter(Contract.ReklamacjeFragment view)
     {
         this.view = view;
 
         eventBus = EventBus.getDefault();
         eventBus.register(this);
 
-        model = new ProdukcjaModel();
+        model = new ReklamacjeModel();
     }
 
     public void onCreate()
@@ -60,26 +61,9 @@ public class ProdukcjaPresenter
         return ret;
     }
 
-    //
-    public String getEtapProdukcji(int p)
+    @Subscribe (threadMode = ThreadMode.MAIN)
+    public void getBusData(List<REKLAMACJE> lista)
     {
-        String ret = "produkcja I";
-
-        switch(p)
-        {
-            case 0: ret = "produkcja I"; break;
-            case 1: ret = "programowanie"; break;
-            case 2: ret = "produkcja II"; break;
-            case 3: ret = "przekazano do wysyłki"; break;
-        }
-
-        return ret;
-    }
-
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    public void getBusData(List<PRODUKCJA> lista)
-    {
-        //Wyświetl listę
         view.showData(lista);
     }
 }

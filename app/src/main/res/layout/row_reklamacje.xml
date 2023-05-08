@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/tvLp"
+        android:layout_width="20dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/tvTemat"
+        android:layout_width="150dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/tvTermin"
+        android:layout_width="60dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/tvPriorytet"
+        android:layout_width="60dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/tvOsobaOdpowiedzialna"
+        android:layout_width="110dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/tvStatus"
+        android:layout_width="65dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/tvDataZmianyStatusu"
+        android:layout_width="100dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/tvWykonanaNaprawa"
+        android:layout_width="180dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/tvZglaszaneProblemy"
+        android:layout_width="180dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/tvKosztPonosi"
+        android:layout_width="80dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/tvDataWprowadzenia"
+        android:layout_width="100dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/tvOsobaZglaszajaca"
+        android:layout_width="100dp"/>
+
+</LinearLayout>

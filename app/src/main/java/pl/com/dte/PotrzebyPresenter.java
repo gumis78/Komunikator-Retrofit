@@ -1,25 +1,34 @@
 package pl.com.dte;
 
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.List;
 
-public class ProdukcjaPresenter
+public class PotrzebyPresenter
 {
-    private Contract.ProdukcjaFragment view;
-    private ProdukcjaModel model;
+    private Contract.PotrzebyFragment view;
+    private PotrzebyModel model;
     private EventBus eventBus;
 
-    public ProdukcjaPresenter(Contract.ProdukcjaFragment view)
+    public PotrzebyPresenter(Contract.PotrzebyFragment view)
     {
         this.view = view;
 
         eventBus = EventBus.getDefault();
         eventBus.register(this);
 
-        model = new ProdukcjaModel();
+        model = new PotrzebyModel();
     }
 
     public void onCreate()
@@ -60,24 +69,8 @@ public class ProdukcjaPresenter
         return ret;
     }
 
-    //
-    public String getEtapProdukcji(int p)
-    {
-        String ret = "produkcja I";
-
-        switch(p)
-        {
-            case 0: ret = "produkcja I"; break;
-            case 1: ret = "programowanie"; break;
-            case 2: ret = "produkcja II"; break;
-            case 3: ret = "przekazano do wysyłki"; break;
-        }
-
-        return ret;
-    }
-
     @Subscribe(threadMode = ThreadMode.MAIN)
-    public void getBusData(List<PRODUKCJA> lista)
+    public void getBusData(List<POTRZEBY> lista)
     {
         //Wyświetl listę
         view.showData(lista);

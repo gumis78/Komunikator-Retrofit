@@ -27,7 +27,7 @@ public class ProdukcjaModel
         Retrofit retrofit = MyRetrofit.getRetrofitInstance();
 
         //Utwórz uchwyt dla interfejsu dataService
-        GetDataService dataService = retrofit.create(GetDataService.class);
+        GetDataService.Produkcja dataService = retrofit.create(GetDataService.Produkcja.class);
 
         //pobranie danych (czyli uruchomienie skryptu z parametrem, tu: komunikator.php?param=1)
         Call<List<PRODUKCJA>> call = dataService.getData("1");
@@ -38,7 +38,7 @@ public class ProdukcjaModel
             @Override
             public void onResponse(Call<List<PRODUKCJA>> call, Response<List<PRODUKCJA>> response)
             {
-                //Przekaż do presentera listę danych z bazy (jeśli są jakeiś wyniki)
+                //Przekaż do presentera listę danych z bazy (jeśli są jakieś wyniki)
                 if(response.body() != null)
                     eventBus.post(response.body());
             }

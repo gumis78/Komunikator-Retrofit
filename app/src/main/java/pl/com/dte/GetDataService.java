@@ -21,9 +21,42 @@ import retrofit2.http.Query;
  //-> https://dte.com.pl/script/komunikator.php?param1=parametr1&param2=parametr2&param3=parametr3
  **/
 
-//Zdefiniowanie Endpointów - skryptu i parametrów do odczytu lub zapisu danych
+//Zdefiniowanie endpointów - skryptu i parametrów do odczytu lub zapisu danych
 public interface GetDataService
 {
-    @GET("komunikator.php")
-    Call<List<PRODUKCJA>> getData(@Query("param") String param);
+    interface Produkcja
+    {
+        @GET("komunikator.php")
+        Call<List<PRODUKCJA>> getData(@Query("param") String param);
+    }
+
+    interface Potrzeby
+    {
+        @GET("komunikator.php")
+        Call<List<POTRZEBY>> getData(@Query("param") String param);
+    }
+
+    interface Zamowienia
+    {
+        @GET("komunikator.php")
+        Call<List<ZAMOWIENIA>> getData(@Query("param") String param);
+    }
+
+    interface Reklamacje
+    {
+        @GET("komunikator.php")
+        Call<List<REKLAMACJE>> getData(@Query("param") String param);
+    }
+
+    interface Projekty
+    {
+        @GET("komunikator.php")
+        Call<List<PROJEKTY>> getData(@Query("param") String param);
+    }
+
+    interface Pomysly
+    {
+        @GET("komunikator.php")
+        Call<List<POMYSLY>> getData(@Query("param") String param);
+    }
 }

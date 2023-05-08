@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/lp"
+        android:layout_width="20dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/osoba_odpowiedzialna"
+        android:layout_width="110dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/temat"
+        android:layout_width="150dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/data_wprowadzenia"
+        android:layout_width="100dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/data_zakonczenia"
+        android:layout_width="100dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/stopien_zaawansowania"
+        android:layout_width="120dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/data_zmiany_statusu"
+        android:layout_width="100dp"/>
+
+    <TextView
+        style="@style/tab_row"
+        android:id="@+id/uwagi"
+        android:layout_width="150dp"/>
+
+</LinearLayout>

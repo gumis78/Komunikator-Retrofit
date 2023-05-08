@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp">
+
+                <TextView
+                    style="@style/tab_header"
+                    android:text="Lp"
+                    android:layout_width="20dp"/>
+
+                <TextView
+                    style="@style/tab_header"
+                    android:text="Temat"
+                    android:layout_width="150dp"/>
+
+                <TextView
+                    style="@style/tab_header"
+                    android:text="Termin"
+                    android:layout_width="60dp"/>
+
+                <TextView
+                    style="@style/tab_header"
+                    android:text="Priorytet"
+                    android:layout_width="60dp"/>
+
+                <TextView
+                    style="@style/tab_header"
+                    android:text="Osoba odpowiedzialna"
+                    android:layout_width="110dp"/>
+
+                <TextView
+                    style="@style/tab_header"
+                    android:text="Status"
+                    android:layout_width="65dp"/>
+
+                <TextView
+                    style="@style/tab_header"
+                    android:text="Data zmiany statusu"
+                    android:layout_width="100dp"/>
+
+                <TextView
+                    style="@style/tab_header"
+                    android:text="Wykonana naprawa"
+                    android:layout_width="180dp"/>
+
+                <TextView
+                    style="@style/tab_header"
+                    android:text="Zgłaszane problemy"
+                    android:layout_width="180dp"/>
+
+                <TextView
+                    style="@style/tab_header"
+                    android:text="Koszt ponosi"
+                    android:layout_width="80dp"/>
+
+                <TextView
+                    style="@style/tab_header"
+                    android:text="Data wprowadzenia"
+                    android:layout_width="100dp"/>
+
+                <TextView
+                    style="@style/tab_header"
+                    android:text="Osoba zglaszajaca"
+                    android:layout_width="100dp"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</FrameLayout>
